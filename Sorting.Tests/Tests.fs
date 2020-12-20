@@ -33,3 +33,11 @@ let ``Test case 5 - [1;1;1;1;1] removed duplicates is equal to [1]`` () =
     let actual = Main.removeDuplicates [1;1;1;1;1]
     let expected = set [1]
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
+
+[<Fact>]
+let ``Test case 6 - [1;1;2;2;3;3] removed duplicates is equal to [1;2;3]`` () =
+    let actual = Main.removeDuplicates [1;1;2;2;3;3]
+    let expected = set [1;2;3]
+    Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
+
+
