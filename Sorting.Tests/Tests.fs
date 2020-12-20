@@ -15,3 +15,9 @@ let ``Test case 2 - [8;2;7;8;1;4] sorted is equal to [1;2;4;7;8;8]`` () =
     let actual = Main.quicksort [8;2;7;8;1;4]
     let expected = [1;2;4;7;8;8]
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
+
+[<Fact>]
+let ``Test case 2 - [] sorted is equal to []`` () =
+    let actual = Main.quicksort []
+    let expected = []
+    Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)

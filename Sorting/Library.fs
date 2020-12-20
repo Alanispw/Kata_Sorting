@@ -3,15 +3,14 @@
 module Main = 
     let rec quicksort list = 
         match list with 
-        | [] -> 
-                []
-        | first::res -> 
+        | [] -> []
+        | firstElement::otherElements -> 
             let small = 
-                res 
-                |> List.filter (fun e -> e < first) 
+                otherElements 
+                |> List.filter (fun e -> e < firstElement) 
                 |> quicksort
             let larger = 
-                res 
-                |> List.filter (fun e -> e >= first) 
+                otherElements 
+                |> List.filter (fun e -> e >= firstElement) 
                 |> quicksort
-            List.concat [small; [first]; larger;]
+            List.concat [small; [firstElement]; larger;]
