@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/code/Desktop/Sort/Sorting/Sorting.fsproj": {}
+  },
+  "projects": {
+    "/Users/code/Desktop/Sort/Sorting/Sorting.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/code/Desktop/Sort/Sorting/Sorting.fsproj",
+        "projectName": "Sorting",
+        "projectPath": "/Users/code/Desktop/Sort/Sorting/Sorting.fsproj",
+        "packagesPath": "/Users/code/.nuget/packages/",
+        "outputPath": "/Users/code/Desktop/Sort/Sorting/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/code/NuGet.Config",
+          "/Users/code/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "generatePathProperty": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

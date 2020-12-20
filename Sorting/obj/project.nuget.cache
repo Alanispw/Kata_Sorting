@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yKQ3EJnLQ3DlaIJMKZajivW1O7JsFMp+qmGN67cqb3kO1M1vjRQTdTOB2zHjqgGlb1+TKvvwHNDbd2rxBostXA==",
+  "success": true,
+  "projectFilePath": "/Users/code/Desktop/Sort/Sorting/Sorting.fsproj",
+  "expectedPackageFiles": [
+    "/Users/code/.nuget/packages/fsharp.core/4.7.2/fsharp.core.4.7.2.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
