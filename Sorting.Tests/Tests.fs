@@ -27,3 +27,9 @@ let ``Test case 4 - [1;1;4;6;8;10] removed duplicates is equal to [1;4;6;8;10]``
     let actual = Main.removeDuplicates [1;1;4;6;8;10]
     let expected = set [1;4;6;8;10]
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
+
+[<Fact>]
+let ``Test case 5 - [1;1;1;1;1] removed duplicates is equal to [1]`` () =
+    let actual = Main.removeDuplicates [1;1;1;1;1]
+    let expected = set [1]
+    Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
