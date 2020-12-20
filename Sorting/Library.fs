@@ -5,12 +5,9 @@ module Main =
         match list with 
         | [] -> []
         | firstElement::otherElements -> 
-            let small = 
-                otherElements 
-                |> List.filter (fun e -> e < firstElement) 
-                |> quicksort
-            let larger = 
-                otherElements 
-                |> List.filter (fun e -> e >= firstElement) 
-                |> quicksort
-            List.concat [small; [firstElement]; larger;]
+            let small, larger = List.partition ((>=) firstElement) otherElements
+            List.concat [quicksort small; [firstElement]; quicksort larger]
+
+    let removeDuplicates list:Set<int> = 
+        let notDuplicates = Set.ofList list
+        notDuplicates
